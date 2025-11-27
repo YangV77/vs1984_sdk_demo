@@ -22,11 +22,11 @@ Because the world needs a system that does not rely on servers but still provide
 
 **VS1984** is designed for scenarios such as:
 
-✔ Anonymous chat
-✔ Anonymous voice calls
-✔ Uncensorable content publishing
-✔ Untraceable on-chain transactions
-✔ Paid BT content platforms
-✔ A globally distributed, secure communication network
-✔ An encrypted ecosystem beyond the reach of nation-state censors
+- ✔ Anonymous chat
+- ✔ Anonymous voice calls
+- ✔ Uncensorable content publishing
+- ✔ Untraceable on-chain transactions
+- ✔ Paid BT content platforms
+- ✔ A globally distributed, secure communication network
+- ✔ An encrypted ecosystem beyond the reach of nation-state censors
 When traditional platforms shut down, censorship rises, and communication is restricted, VS1984 can still operate.
