@@ -28,16 +28,14 @@ include_directories(
         ${CMAKE_SOURCE_DIR}/lib/portaudio/portaudio
 )
 
-# 源文件夹和目标文件夹的路径
 set(SOURCE_DIR "${CMAKE_SOURCE_DIR}/res")
 set(DEST_DIR "${CMAKE_BINARY_DIR}/cnf")
-# 创建目标文件夹，如果它不存在的话
+
 add_custom_command(
         OUTPUT ${DEST_DIR}
         COMMAND ${CMAKE_COMMAND} -E make_directory ${DEST_DIR}
 )
 
-# 复制文件的自定义命令
 add_custom_command(
         OUTPUT ${DEST_DIR}/routes.json ${DEST_DIR}/config.xbc
         COMMAND ${CMAKE_COMMAND} -E copy_if_different ${SOURCE_DIR}/config.xbc ${DEST_DIR}/config.xbc
@@ -46,7 +44,6 @@ add_custom_command(
         COMMENT "prepare files to build directory"
 )
 
-# 创建一个自定义目标，使得上述命令在每次构建时都会执行
 add_custom_target(
         PREPARE_COMPILE ALL
         DEPENDS ${DEST_DIR}/routes.json ${DEST_DIR}/config.xbc
